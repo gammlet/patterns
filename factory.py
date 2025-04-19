@@ -26,18 +26,12 @@ class Ship(Transport):
 class Truck(Transport):
     def go(self):
         print("Truck go")
-
-
-
-
 def createtrip():
     name = input("enter your trip type: ")
     if name == "Sea":
         logistics = SeaLogistics()
     if name == "Road":
         logistics = RoadLogistics()
-
-
     return logistics.create_transport()
 
 
